@@ -1,0 +1,40 @@
+@import './base.css';
+* {
+  margin: 0;     /* 重置所有元素的外边距 */
+  padding: 0;    /* 重置所有元素的内边距 */
+  box-sizing: border-box; /* 使用边框盒模型 */
+}
+
+#app {
+  width: 100vw;  /* 占满视口宽度 */
+  height: 100vh; /* 占满视口高度 */
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 0rem;
+  }
+}
